@@ -2,6 +2,10 @@
 
 echo \$0 is $0
 echo Running home $(dirname $0)
-
-PYTHONDIR=$(dirname $0)/python/
+export APPDIR=$(dirname $0)
+export PYTHONPATH=$(dirname $0)/python
+export PYTHON=${PYTHONPATH}/bin/python3
+export PYTHONHOME=${PYTHONPATH}
+echo PYTHONPATH is $PYTHONPATH
+${PYTHONPATH}/bin/python3 ${APPDIR}/testapp.py
 
