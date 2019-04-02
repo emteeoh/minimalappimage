@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=testapp
+Exec=testapp
+Icon=testapp
+Type=Application
+Categories=Utility;
